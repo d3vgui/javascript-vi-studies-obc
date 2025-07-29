@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>JAVASCRIPT VI - REQUISIÇÕES POST COM JAVASCRIPT</title>
+</head>
+
+<body>
+    <section id="section-one">
+        <h1><span class="effect">JAVASCRIPT VI</span> - REQUISIÇÕES POST COM JAVASCRIPT 🤖</h1>
+        <span>VÁ ATÉ A PRÓXIMA SESSÃO</span>
+    </section>
+    <section id="section-two">
+        <form action="http://localhost:3000/articles" method="post">
+            <h2>Escrever um artigo</h2>
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title">
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author">
+            <label for="content">Conteúdo:</label>
+            <textarea id="content" name="content" cols="30" rows="10"></textarea>
+            <button>Salvar</button>
+        </form>
+        <div>
+            <h2>Artigos</h2>
+            <section id="articles"></section>
+        </div>
+    </section>
+</body>
+
+</html>

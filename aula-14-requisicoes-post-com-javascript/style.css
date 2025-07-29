@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: JetBrains Mono, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#section-one{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span{
+  margin-top: 10px;
+}
+
+.effect {
+  background: linear-gradient(
+    to right,
+    #355fd1,
+    #71b9d6,
+    #ff00bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#section-two{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form label{
+  margin-top: 20px;
+}
+
+form input{
+  margin-top: 10px;
+}
+
+form textarea{
+  margin-top: 10px;
+}
+
+form button{
+  margin-top: 15px;
+}
+
+h3{
+  margin-top: 10px;
+}
+
+div{
+  margin-top: 10px;
+}
