@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: JetBrains Mono, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#section-one{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span{
+  margin-top: 10px;
+}
+
+.effect {
+  background: linear-gradient(
+    to right,
+    #355fd1,
+    #71b9d6,
+    #ff00bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#section-two{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 2rem 2rem 0;
+}
+
+h2 {
+  background-color: #39353b;
+  border-radius: .5rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+label {
+  display: block;
+  margin: 1.5rem 0 .5rem;
+}
+
+input {
+  background-color: #39353b;
+  border: 0;
+  border-radius: .25rem;
+  color: #fff;
+  padding: .75rem;
+  width: 100%;
+}
+
+button {
+  background-color: #6bf394;
+  border: 0;
+  border-radius: .25rem;
+  font-size: .9rem;
+  padding: .5rem 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+form > button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+button + button {
+  margin-left: 1rem;
+}
+
+.transactions {
+  width: 100%;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #39353b;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.transaction:first-child {
+  margin-top: 1rem;
+}
+
+.transaction > span {
+  flex: 1;
+}
+
+.transaction-amount {
+  margin-right: 4rem;
+  text-align: end;
+}
+
+.transaction-amount.credit {
+  color: #6bf394;
+}
+
+.transaction-amount.debit {
+  color: #f64348;
+}
+
+.edit-btn {
+  background-color: #7bb4ff;
+}
+
+.delete-btn {
+  background-color: #f64348;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
